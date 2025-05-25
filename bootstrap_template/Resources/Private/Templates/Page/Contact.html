@@ -1,0 +1,68 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Page" />
+
+<f:section name="Main">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center mb-4">{data.title}</h1>
+                <f:if condition="{data.subtitle}">
+                    <h2 class="h4 text-muted text-center mb-4">{data.subtitle}</h2>
+                </f:if>
+                
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4 mb-md-0">
+                                <h3 class="h5">Address</h3>
+                                <p class="mb-0">
+                                    123 Street Name<br>
+                                    City, ST 12345<br>
+                                    Country
+                                </p>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4 mb-md-0">
+                                <h3 class="h5">Contact</h3>
+                                <p class="mb-0">
+                                    Email: info@example.com<br>
+                                    Phone: (123) 456-7890<br>
+                                    Fax: (123) 456-7891
+                                </p>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <h3 class="h5">Hours</h3>
+                                <p class="mb-0">
+                                    Monday - Friday: 9:00 AM - 5:00 PM<br>
+                                    Saturday: 10:00 AM - 2:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <h3 class="h4 mb-4">Get in Touch</h3>
+                        
+                        <!-- Contact form content element will be placed here -->
+                        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+                    </div>
+                </div>
+                
+                <!-- Google Maps or other map integration can be added here -->
+                <div class="map-container mb-5">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937586!2d2.292292615980885!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1621521431134!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <!-- Additional content area -->
+                <div class="additional-content">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</f:section>
+</html>

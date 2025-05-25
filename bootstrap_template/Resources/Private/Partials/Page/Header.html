@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<header class="site-header bg-light">
+    <div class="container">
+        <div class="py-3">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <a href="/" class="d-inline-block site-logo">
+                        <f:if condition="{logoFile}">
+                            <f:then>
+                                <img src="{f:uri.resource(path: logoFile)}" alt="{websiteName}" class="img-fluid" style="max-height: 60px;">
+                            </f:then>
+                            <f:else>
+                                <h1 class="h3 mb-0">{websiteName}</h1>
+                            </f:else>
+                        </f:if>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <f:render partial="Page/Navigation" arguments="{_all}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+</html>

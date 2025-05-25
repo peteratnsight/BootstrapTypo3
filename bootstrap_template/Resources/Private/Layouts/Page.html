@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{data.title} - {websiteName}</title>
+    <f:comment>All header data like CSS and JS will be automatically included by TYPO3</f:comment>
+</head>
+<body>
+    <div class="page-wrapper">
+        <f:render partial="Page/Header" arguments="{_all}" />
+        
+        <main id="content" class="content-main">
+            <f:render section="Main" />
+        </main>
+        
+        <f:render partial="Page/Footer" arguments="{_all}" />
+    </div>
+    
+    <f:comment>JavaScript will be included automatically at the end of the body</f:comment>
+</body>
+</html>
+</f:spaceless>
+</html>

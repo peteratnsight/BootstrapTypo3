@@ -1,0 +1,69 @@
+# Global constants for the Bootstrap Template extension
+
+page {
+    # cat=Bootstrap Template/101; type=string; label=Layout Root Path: Path to layouts
+    layoutRootPath = EXT:bootstrap_template/Resources/Private/Layouts/
+    
+    # cat=Bootstrap Template/102; type=string; label=Partial Root Path: Path to partials
+    partialRootPath = EXT:bootstrap_template/Resources/Private/Partials/
+    
+    # cat=Bootstrap Template/103; type=string; label=Template Root Path: Path to templates
+    templateRootPath = EXT:bootstrap_template/Resources/Private/Templates/
+    
+    # cat=Bootstrap Template/110; type=string; label=Website Name
+    websiteName = My TYPO3 Website
+    
+    # cat=Bootstrap Template/111; type=string; label=Logo Path
+    logoPath = EXT:bootstrap_template/Resources/Public/Images/logo.svg
+    
+    # cat=Bootstrap Template/112; type=string; label=Favicon Path
+    favicon = EXT:bootstrap_template/Resources/Public/Icons/favicon.ico
+}
+
+# Bootstrap configuration
+bootstrap {
+    # cat=Bootstrap Template/200; type=color; label=Primary Color
+    primary = #0d6efd
+    
+    # cat=Bootstrap Template/201; type=color; label=Secondary Color
+    secondary = #6c757d
+    
+    # cat=Bootstrap Template/202; type=color; label=Success Color
+    success = #198754
+    
+    # cat=Bootstrap Template/203; type=color; label=Info Color
+    info = #0dcaf0
+    
+    # cat=Bootstrap Template/204; type=color; label=Warning Color
+    warning = #ffc107
+    
+    # cat=Bootstrap Template/205; type=color; label=Danger Color
+    danger = #dc3545
+    
+    # cat=Bootstrap Template/206; type=color; label=Light Color
+    light = #f8f9fa
+    
+    # cat=Bootstrap Template/207; type=color; label=Dark Color
+    dark = #212529
+}
+
+# File inclusion paths
+resources {
+    # cat=Bootstrap Template/300; type=string; label=CSS Directory
+    css = EXT:bootstrap_template/Resources/Public/Css/
+    
+    # cat=Bootstrap Template/301; type=string; label=JavaScript Directory
+    js = EXT:bootstrap_template/Resources/Public/JavaScript/
+}
+
+# Custom settings
+settings {
+    # cat=Bootstrap Template/400; type=boolean; label=Enable responsive images
+    responsiveImages = 1
+    
+    # cat=Bootstrap Template/401; type=options[fluid_styled_content=fluid_styled_content]; label=Content rendering definition
+    contentRendering = fluid_styled_content
+    
+    # cat=Bootstrap Template/402; type=boolean; label=Use CDN for Bootstrap files
+    useCdn = 1
+}
