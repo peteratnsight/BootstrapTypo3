@@ -1,11 +1,11 @@
 {
-    "name": "typo3/bootstrap-template",
+    "name": "xms/bootstrap-template",
     "type": "typo3-cms-extension",
     "description": "A Bootstrap 5 based template extension for TYPO3 providing responsive layouts and customizable design options",
     "authors": [
         {
-            "name": "TYPO3 Developer",
-            "email": "dev@example.com",
+            "name": "Peter Pan",
+            "email": "pp@n-sight.de",
             "role": "Developer"
         }
     ],
